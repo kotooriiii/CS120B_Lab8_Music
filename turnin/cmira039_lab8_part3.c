@@ -7,7 +7,7 @@
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  *
- *	Demo Link: 
+ *	Demo Link: https://youtu.be/MOsKLaC7NRI
  */
  
 #include <avr/io.h>
@@ -277,6 +277,8 @@ int main(void)
 		while(!TimerFlag);
 		TimerFlag = 0;
 	}
+	PWM_off();
+
 	return 1;
 }
 	
